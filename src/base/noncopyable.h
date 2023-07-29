@@ -1,12 +1,13 @@
 #ifndef NONCOPYABLE_H
 #define NONCOPYABLE_H
 
-/*
-禁止拷贝操作的基类，设置为protect权限的成员函数可以让派生类继承
-派生类对象可以正常的构造和析构
-*/
+/**
+ * noncopyable: 禁止派生类对象进行拷贝操作。
+ * noncopyable 被继承以后，派生类对象可以正常构造和析构，
+ * 但派生类对象无法进行拷贝构造和拷贝赋值操作！
+ * 注：声明为 protected 的成员仅向派生类（和友元类）暴露。
+ */
 
-// TODO: noncopyable 的学习
 class noncopyable
 {
 public:

@@ -30,7 +30,7 @@ aux_source_directory(${PROJECT_SOURCE_DIR}/src/mysql SRC_MYSQL)
 set(CXX_FLAGS
     -g
     -Wall
-    -std=c++11
+    -std=c++20
     )
 
 # 生成动态库 tiny_network
